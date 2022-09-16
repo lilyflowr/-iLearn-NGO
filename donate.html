@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate-iLearn Education Advocate</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Open Sans", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+
+    }
+
+    a {
+        text-decoration: none;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    h3 {
+        background: #ff5722;
+        color: #fff;
+        padding: 10px;
+        text-align: left;
+
+    }
+
+    .content {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    .btn.btn-primary {
+        background: #ff5722;
+        color: #fff;
+        border: none !important;
+        border: 2px solid transparent !important;
+    }
+
+    .btn.btn-primary:hover,
+    .btn.btn-primary:active,
+    .btn.btn-primary:focus {
+        box-shadow: none;
+        background: #ff5722;
+        color: #fff !important;
+    }
+
+    .btn:hover,
+    .btn:active,
+    .btn:focus {
+        background: #393e46 !important;
+        color: #fff;
+        outline: none !important;
+    }
+
+    .btn.btn-default:hover,
+    .btn.btn-default:focus,
+    .btn.btn-default:active {
+        border-color: transparent;
+    }
+
+
+    .container {
+        width: 80vh;
+        min-height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    input[type=text],
+    textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+    <main>
+        <div class="container">
+            <h3>Donate Now</h3>
+            <h2>Thank you for your Donation</h2>
+            <form class="content" action="">
+                <input type="text" placeholder="Amount($)">
+                <input type="text" placeholder="First Name" name="firstName" required>
+                <input type="text" placeholder="Last Name" name="lastName" required>
+                <input type="text" placeholder="Email" name="email" required>
+                <input type="text" placeholder="Address" name="adress" required>
+                <textarea placeholder="Additional note" name="Additionalnote" id="" cols="5" rows="10"></textarea>
+            </form>
+            <span><a class="btn btn-primary btn-lg" href="#">Donate Now</a></span>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/Untitled-1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer <Form></Form></title>
+<style>
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    </style></head>
+
+    
+<body>
+    <div>
+        <h1>
+            Volunteer as a Teacher
+        </h1>
+        <h2>
+            fill the form below
+        </h2>
+        
+    <form action="http://127.0.0.1:5500/Untitled-1.html#">
+    </form></div>
+    <div><label for="name"> First Name</label><br>
+        <input type="text"></div>
+        <div><label for="name"> Middle Name</label><br>
+            <input type="text"></div>
+            <div><label for="name"> Last name</label><br>
+                <input type="text"></div>
+            
+    <div>
+    <label for="Email">Email</label><br> 
+    <input type="email"> 
+</div>
+<div>
+    <label for="Sex">sex</label><br> 
+    <select name="Sex" id="Sex"> 
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Others">Others</option>
+        </select>
+</div>
+<div>
+    <label for="Date of Birth">Date Of Birth</label><br> 
+    <input type="date"> 
+</div>
+<div>
+    <label for="Nationality">Country</label><br> 
+    <input type="text"> 
+</div>
+<div>
+</div>
+
+   
+<div>
+     <h3>
+        EDUCATIONAL QUALIFICATION
+     </h3>
+    <label for="Edu">Select highest qualification</label>
+    <select name="Educational Qualification" id="Edu">
+    <option value="Post Graduate">Post Graduate</option>
+    <option value="Graduate">Graduate</option>
+    <option value="NCE">NCE</option>
+    <option value="Others">Others</option>
+</select>
+
+</div>
+<br>
+<div>
+    <h4>Upload Cerificate</h4>
+<input type="file" id="Highest Qualification Obtained" name="Upload">
+
+</div> <br>
+
+<div>
+    <label for="Message">In no more than 450 words, tell us why you want to volunteer as a Teacher</label><br>
+    <textarea name="Message" id="message" cols="80" rows="10"></textarea>
+
+</div>
+<div>
+    <button type="submit">submit</button>
+</div>
+    
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
